@@ -19,7 +19,7 @@ export default defineConfig({
     { name: "desktop", use: { ...devices["Desktop Chrome"] } },
   ],
   webServer: {
-    command: `npm run build && npx next start -p ${PORT}`,
+    command: `npx next build && npx next start -p ${PORT}`,
     url: `${baseURL}/api/v1/brands`,
     timeout: 180_000,
     reuseExistingServer: false,
